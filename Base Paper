@@ -1,0 +1,741 @@
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ Detection of Stress in IT Employees  
+using Machine Learning Technique 
+1stSuresh Kumar Kanaparthi 
+Computer Science and Engineering
+ Gokaraju Rangaraju Institute of 
+Engineering and Technology 
+2022 International Conference on Applied Artificial Intelligence and Computing (ICAAIC) | 978-1-6654-9710-7/22/$31.00 ©2022 IEEE | DOI: 10.1109/ICAAIC53929.2022.9793195
+ Hyderabad, India 
+sureshkonline@gmail.com 
+4thBhavya Kadiam 
+Computer Science and Engineering 
+Gokaraju Rangaraju Institute of 
+Engineering and Technology 
+Hyderabad, India 
+bhavyakadiam796@gmail.com 
+2ndSurekha P 
+Computer Science and Engineering 
+Gokaraju Rangaraju Institute of 
+Engineering and Technology 
+Hyderabad, India 
+Prekha.572@gmail.com 
+5thBeulah Mungara 
+Computer Science and Engineering 
+Gokaraju Rangaraju Institute of 
+Engineering and Technology 
+Hyderabad, India 
+beulah.tillu@gmail.com 
+Abstract- The objective of this paper is to apply 
+machine learning and visual processing to identify 
+overworked IT employees. Our technology is an 
+improved version of older stress detection systems 
+that did not include live detection or personal 
+counseling. Stress detection methods that don't 
+include 
+3rdLakshmi Priya Bellamkonda 
+Computer Science and Engineering 
+Gokaraju Rangaraju Institute of 
+Engineering and Technology 
+Hyderabad, India 
+lakshmipriya.bellamkonda09@gmail.com 
+[10]. Preventative interventions can assist to lessen 
+the harmful repercussions of stress. 
+real-time 
+monitoring or individual 
+counselling are being updated in this research. A 
+survey is used to collect data on employees' mental 
+stress levels in order to provide effective stress 
+management solutions. In order to get the most out of 
+your employees, this paper will look at stress 
+management and how to create a healthy, 
+spontaneous work environment. 
+Keywords- Stress prediction, KNN classification, facial 
+expressions. 
+I. 
+INTRODUCTION 
+To be competitive, the IT industry is continually 
+launching new items and services. Furthermore, 
+employees' stress levels have increased over the 
+past year, according to this poll. The problem 
+exists, despite the fact that many firms provide 
+mental health benefits to their personnel. We'll start 
+by looking at the stress levels of employees in the 
+workplace. Images and machine learning will be 
+used to examine stress patterns and pinpoint the 
+most important factors that influence individual 
+stress levels. According to the WHO, stress is a 
+mental disease that affects one out of every four 
+voters. Mental and social issues, a lack of openness 
+in the job, a loss of faith in coworkers, and even 
+death are just a few examples [12] [3]. Counseling 
+is beneficial to people who are under a lot of stress. 
+If we don't take precautions to control stress, 
+societal and economic systems may be affected 
+These days, it aims at providing new technology 
+and items to the economy in order to provide a 
+fresh perspective. The strain levels in employees 
+were found throughout this study, which raised the 
+standard high [12]. 
+Questionnaires are routinely used in the field of 
+stress research to get insight into overall working 
+experiences, but little is known about the 
+immediate consequences of stressors at work [10]. 
+There will be a hesitation on the side of people to 
+declare whether or not they are worried. Traditional 
+techniques of evaluating workplace stress levels 
+included asking employees to fill out a survey [18]. 
+To get the paperwork to the receiver, the sender 
+had to put in a lot of time and effort [7]. Employers 
+who use the Stress Detection System can better 
+prepare their employees to deal with stressful 
+events before they occur. While office workers are 
+concentrated on their task, stress identification 
+might sometimes imply distinguishing between a 
+'stressed' and a 'relaxed' condition [20]. Employees' 
+headshots are taken, and survey questionnaires are 
+given to them that are similarly standard in style 
+and layout. Physical exertion is reduced, which 
+saves both time and money [27]. This 
+organizational strategy can assist relieve employee 
+stress by using our painstakingly developed 
+questionnaire. 
+The usage of stress monitoring software can 
+improve both the well-being of society and the 
+health of individuals. It is consequently necessary 
+to develop scientific technologies that can analyses 
+physiological data and automatically estimate stress 
+levels in humans [21]. Obesity, heart attack, 
+diabetes, asthma, and other health complications 
+may arise as a result of stress. Hourly, a student in 
+a different section of the country commits suicide. 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 486
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ According to a Lancet report in 2012, our country 
+has seen a substantial number of suicide cases 
+among young people aged fifteen to twenty-nine 
+[2]. Stress detection has been shown in studies to 
+enhance people's outlook on life, which could have 
+a substantial social benefit. Companies in the 
+information technology sector are currently altering 
+the industry by introducing new technologies and 
+products. 
+The three steps of image processing are as follows: 
+Tools for importing images can be used to do this. 
+During the process, images are reviewed and 
+edited. A modified image or a report is the output 
+of the image analysis. Machine learning is an 
+artificial intelligence approach that allows a system 
+to learn and evolve without being explicitly 
+programmed (AI)[5]. The construction of computer 
+programmers that can learn on their own is the 
+subject of "machine learning," a branch of 
+computer science [5]. 
+The assessment of previous work on stress 
+detection depended on digital signal processing, 
+which took into account Galvanic skin reaction, 
+blood volume, pupil dilation, and skin temperature 
+[1]. Other studies on this topic use a number of 
+physiological indicators and visual characteristics 
+(eye closure, head movement) to quantify stress 
+levels in persons who are focused on their work 
+[21]. These measurements, on the other hand, are 
+obtrusive and uncomfortable in real life application 
+[5][11][17]. Stress is a factor in as many as 50 
+percent to 80 percent of all health problems, 
+according to medical sources [1][24]. The core 
+cause of cardiovascular disease is largely regarded 
+to be stress. Stress plays a role in a number of the 
+most frequent health problems in the United States. 
+All of these issues, along with a plethora of others, 
+are classified as psychosomatic (i.e., caused or 
+amplified by mental causes such as stress) [8]. 
+There are three areas where stress has a harmful 
+impact. 
+Stress can manifest itself in a variety of ways, 
+including feelings of guilt, embarrassment, worry, 
+and even fury and impatience. Loneliness can 
+manifest itself as fatigue, tension, concern, 
+irritation, moodiness, and loneliness. As a result of 
+stress, a person's behavior alters. When people are 
+stressed, they are more likely to get into accidents, 
+abuse drugs or alcohol, or engage in 
+confrontational behavior. Anxiety and stress can 
+decrease cognitive ability, cause impulsive 
+behavior, 
+Sensor technologies, such as smartphones and 
+wearables with physiological and movement 
+sensors, have been the focus of recent research 
+[22][25]. 
+Fig. 1 
+Above Fig. 1 shows the model of stress which can 
+be caused by the change in sleep patterns, physical 
+activity, increase in number of working hours, 
+change in Heart Rate. 
+II. 
+LITERATURE SURVEY 
+1) Detecting stress and anxiety via facial clues 
+Authors:  G. Giannakakis, et al. 
+Using video-recorded face clues, this literature 
+review establishes a model for detecting and 
+identifying stress/anxiety emotional states. Through 
+some kind of range of external and internal 
+stresses, a complete experimental method was 
+designed to induce systematic diversity in 
+emotional 
+states 
+(neutral, 
+relaxed, 
+and 
+stressed/anxious). In order to evaluate emotion 
+expression more clearly and accurately, the paper 
+concentrated mostly on non-voluntary and semi
+voluntary facial cues. Sight related activities, oral 
+activity, gesture recognition characteristics, and 
+heart rate were also examined [4]. 
+2) Image Processing and Machine Learning 
+Techniques used for Stress Detection  
+Authors:  Nisha Raichur, et al. 
+limit 
+memory, and even cause 
+hypersensitivity to criticism [13]. In the early 
+stages of depression, tension is common. Money, 
+employment, and personal relationships are just 
+some of the factors that might generate stress. 
+Employees in the corporate world have a limited 
+idea of what it's like to work in high-stress 
+situations. Long-term stress is particularly common 
+among those in the IT business. 
+A real-time non-intrusive video is produced in this 
+paper, which detects by analyzing a person's facial 
+expression, can determine their emotional state. 
+Each video frame contains an individual feeling, 
+and the stress level is determined in the hours after 
+the video capture[18]. A mechanism is applied that 
+enables us both to train a system and analyze 
+feature prediction differences. The paper findings 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 487
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ suggest that the developed technique works 
+effectively with a generic model of all ages[5]. 
+3) Techniques for Predicting Stress in Working 
+Employees Using Machine Learning 
+Authors:  U. S. Reddy, et al. 
+Machine Learning techniques were utilized to train 
+the model that had constructed after preprocessed 
+the data. It was measured and compared to the 
+models shown above in order to determine how 
+well they were manufactured [26]. Out of all the 
+models boosting proved to be the most accurate in 
+our experiments. According to the Decision Trees, 
+factors such as gender, family history, and the 
+availability of health benefits at work are all factors 
+that contribute to stress. Many companies now 
+know more about how to make their workplaces 
+less stressful for their employees by implementing 
+innovative technological solutions [6]. 
+4) Analysis of Stress Detection among Employees 
+using Machine Learning Techniques 
+Authors: B. K. Kiranashree, et al. 
+This research focuses on using Artificial Neural 
+Network (ANN) classifiers to detect stress levels in 
+employees. Employees' mental state is assessed by 
+questions that use the Perceived Stress Scale, 
+which also includes their health and wellbeing by 
+measuring cardiac fluctuation and blood pressure. 
+Because an ANN classifier can learn a large 
+amount of data, we believe it will produce a rather 
+more accurate solution [19] [15]. 
+5) Recognition of mood at work by smartphones 
+and wearable sensors 
+Authors: Zenonos, et al. 
+Sensor technologies, such as smartphones and 
+wearables with physiological and movement 
+sensors, have been the focus of recent research in 
+this area [9]. We investigate the practicality of 
+employing such devices for mood identification in 
+the workplace in this research [14]. Every two 
+hours, a new mood detection framework that can 
+recognize five intensity levels for eight different 
+types of emotions is proposed. In a small-scale user 
+research, wearable sensing data in an office is 
+collected to evaluate our technology environment. 
+Our experiments have yielded promising results, 
+allowing us to accurately distinguish different types 
+of moods [14][16]. The use of sensors that measure 
+physical properties can be costly and time-talking 
+[7]. 
+6) Machine Learning Paradigms for Recognizing 
+Human Mental Stress 
+Authors: Mrs. Megha V Gupta, et al. 
+Detection of human mental stress utilizing Machine 
+Learning frameworks and methodologies such as 
+Electroencephalogram (EEG), Speech Signal, and 
+audio-visual data. For stress detection using EEG, 
+the Database for Emotion Analysis using 
+Physiological Signals (DEAP) dataset will be used. 
+Using Speech Signal and audio-visual data, 
+RAVDESS (Ryerson Audio-Visual Data of 
+Emotional Voice and Song) will also be designed 
+to recognize Stress [18].  
+7) Stress and Relaxation Magnitudes for Tweets 
+Detection 
+Authors: Reshmi Gopalakrishna Pillai, et al. 
+In this exploration work, a WSD arrangement as a 
+preprocessing stage to a current vocabulary based 
+pressure/unwinding strategy. A dataset involving 
+1000 tweets with questionable influence words was 
+gathered 
+and commented on with high 
+interannotator understanding. Joining a WSD was 
+found to fundamentally work on the presentation of 
+TensiStrength regarding Pearson's connection and 
+definite match rate, for both pressure and 
+unwinding. TensiStrength with WSD outflanks AI 
+strategies also. Given the moderately little size of 
+the test set, this must be additionally concentrated 
+on utilizing greater datasets explained with 
+pressure and unwinding qualities [7]. 
+8) Detecting Stress using Social Interactions 
+Authors: Huijie Lin, et al. 
+In this paper, a construction for perceiving clients' 
+psychological tension states from clients' step by 
+step web-based diversion data, using tweets' 
+substance as well as clients' social coordinated 
+efforts. Using authentic virtual diversion data as the 
+reason, we focused on the connection between's 
+client' mental tension states and their social 
+association approaches to acting.We developed a 
+crossbreed model that combines the part diagram 
+model (FGM) with a convolutional frontal cortex 
+affiliation to completely exploit both substance and 
+social joint exertion data from customers' tweets 
+(CNN) [8]. 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 488
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+PROPOSED APPROACH 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ III. 
+Stress is classified using supervised machine 
+learning algorithms such as KNN classifiers in the 
+proposed system. The detection of stress is 
+accomplished through image processing. The 
+worker's picture is given by the program as 
+information, and Image Processing is utilized for 
+discovery at the underlying stage. By translating an 
+image to digital form and performing operations on 
+it, 
+image processing can improve or extract 
+relevant information from it. In previous papers, 
+various machine learning algorithms are used like 
+SVM, linear regression, logistic regression, etc.., 
+but didn’t use KNN for the experiment which is 
+similar to our approach. Not only accuracy but we 
+also 
+found Classification Error, Sensitivity, 
+specificity, false positive rate error, precision. Our 
+system is an updated version of prior stress 
+detection systems that did not include live analysis 
+or individual counseling, but it now incorporates 
+live monitoring and frequent employee analysis, as 
+well as identifying physically and emotionally 
+stress levels. Because there is no continuous taking 
+of photographs, it takes less time and produces 
+more effective outcomes when compared with the 
+results achieved by continuously capturing images 
+of a person. 
+By taking a picture as inputs and returning a 
+photograph or characteristics associated with those 
+images as output. We use a bounded box to show 
+the employee's feeling, and also the emotions are 
+shown at the top of the bounded box. Angry, 
+Disgusted, Fearful, Sad, and Neutral are all stress 
+indicators. 
+Fig. 2. Indication of stressed emotions states. 
+Fig. 3. Indication of not stressed emotions states. 
+A. Advantages of this Approach 
+ 
+ 
+ 
+ 
+An image that has been edited or a 
+report based on image analysis as a 
+result of the output.  
+The Stress Detection System helps 
+workers in managing difficulties that 
+add to stress by giving proactive 
+stress management solutions. 
+Over periodic times, we will take 
+photographs of employees and then 
+distribute traditional survey forms to 
+them. 
+We can also use live cam to detect the 
+stress of the employee, which shows 
+the stress characteristic of a person. 
+Algorithm: K-Nearest Neighbor (KNN) 
+Dataset: 
+To complete the task in accordance with 
+predictions or judgments, an explicit mathematical 
+model is developed using "training data". Image 
+mining can be used to find hidden information in 
+images, link previously unrelated data, and uncover 
+new patterns in the data being mined. 
+Dataset contains a grid representation of an existing 
+dataset with distinctive characteristics. Feature 
+selection is the method involved with diminishing 
+the quantity of information factors while fostering a 
+prescient model. It's the process of selecting 
+appropriate characteristics for your classification 
+algorithm that depends on the sort of issue you're 
+attempting to answer automatically. However, 
+Property Extraction produces a completely 
+redesigned dataset with only mathematical input 
+parameters as an outcome of Principal Component 
+Analysis feature selection, which transforms to six 
+principal components: Condition (No stress, Time 
+pressure, Interruption), Stress, Physical Demand, 
+Performance, and Frustration. 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 489
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+Angry: 
+     
+Disgusted: 
+     
+Fearful: 
+      
+Happy: 
+     
+Neutral: 
+     
+Sad: 
+     
+Surprised: 
+     
+IV. ALGORITHM 
+The following is a general description of how the 
+proposed system algorithm works: 
+Step 1: Begin 
+Step 2: Employee Login. 
+Step 3: Determine whether or not the IT employee 
+is currently employed. 
+Step 4: If you haven't already, sign up. 
+Step 5: Return to the previous step. 
+Step 6: If the answer is yes, the employee will log 
+in. 
+Step 7:  Upload the Image. 
+Step 8:  If the uploaded image is not in JPG file 
+format then a message ”THIS IS NOT A JPG 
+FILE” is displayed. 
+Step 9:  If uploaded image file format is valid then 
+image is detected. 
+Step 10:  User Live Cam Detection. 
+Step 11: KNN Algorithm Results are obtained  
+Along with classification error, sensitivity, 
+specificity, recall, precision, 
+Step 12: End.  
+ 
+A. Implementation of KNN 
+ 
+ Machine learning is basically divided 
+into 3 categories: Supervised learning, 
+Unsupervised learning, reinforcement 
+learning. We chose KNN algorithm 
+among all the machine learning 
+algorithms as it saves every piece of 
+data and utilizes it to classify new 
+data.  
+ In this, no assumptions are made 
+about the data. 
+ It saves the dataset during training 
+and then performs an action on 
+dataset.  
+ The K Nearest Neighbors' basic 
+premise is that the data points with 
+the shortest feature space distance 
+from our new data point are called 
+nearest neighbors. 
+ K is the sum of all such data points 
+we consider during the 
+implementation of our classification 
+algorithm.  
+ We iterate the KNN method with 
+various K values until we find one 
+that greatly minimizes the number of 
+errors while preserving the 
+algorithm's capacity to make right 
+predictions when given data it hasn't 
+seen before. 
+ In this it finds the minimum distance 
+between the new data and the data 
+points in the feature space. In this 
+paper, the value of K is 5 and the 
+distance is found by using the most 
+popular distance metric called 
+Euclidean distance. 
+ The distance can alternatively be 
+calculated using Hamming, 
+Manhattan, or Minkowski distances, 
+depending on the needs. 
+ The distance is calculated between the 
+new datapoint and the existing data 
+points and takes the 5 nearest points 
+to the data point.  
+ The new datapoint will go into the 
+category which has maximum nearest 
+neighbors. 
+ 
+ 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ 978-1-6654-9710-7/22/$31.00 ©2022 IEEE 490
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+Admin has to login by “admin” as both user name 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ V. 
+EXPERIMENTS AND 
+ANALYSIS 
+To check the efficiency of the stability, we 
+gathered information and executed quantitative 
+experimental investigation. 
+Firstly User has to register with the required details 
+user name, login ID, password, mobile, email, 
+Locality, Address, city, state. with all the required 
+details user has to register. If all the details are 
+correct then the message will be displayed as “you 
+have been successfully registered”. Password must 
+contain one number, one upper case and lowercase 
+letters and should contain 8 characters or more. If 
+you enter email or mobile number which is already 
+existed the it will display message as “email or 
+mobile already existed”. If any of the field is 
+missed then it will display a message as “please fill 
+out this field”. If all these details are entered, then 
+only user registration can be successful. 
+Fig. 4. User Registration form 
+User Registration is required to know whether the 
+employee is currently employed to that IT 
+Company or not and for the security and privacy 
+purpose as well. If the person is introvert or some 
+kind of person who is having inferiority complex is 
+not interested in exposing his/her stress to others 
+and also not comfortable in sharing their personal 
+details like images, username, password, etc.  
+Fig. 5. Admin login form 
+and password. After admin successful login he can 
+activate the successfully registered user. 
+Fig. 6. Admin users page 
+User can login with registered Login ID and 
+password. He can successfully login only if admin 
+activates that user. If admin doesnot activate that 
+user then he cannot login and the message will be 
+displayed as “your account not yet activated”.  
+Fig. 7. User login Form 
+If the user is successfully login then a page will be 
+opened which contains Home, Image, Live Cam, 
+KNN, Logout pages. 
+Fig. 8. User Image Page 
+If user clicks on the Image page, then the user can 
+upload the image and can see the results. User can 
+also see already uploaded images and its results as 
+well. As this stores previous uploaded images, this 
+can help for the future medical references by which 
+psychiatrist can be able to help the person. Not 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 491
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ only single face but this approach can also detect 
+the multiple faces as well. 
+Fig. 9. Uploaded Image Facial emotions 
+If user clicks on the live cam then camera turns on 
+and monitors the face of a person who is in front of 
+the camera and displays the result. It also monitors 
+multiple faces as well. 
+Fig. 10. Using Live Cam Result 
+After uploading the image or when using the Live 
+Cam the result will be displayed on the top of the 
+bounding box. 
+If user clicks on KNN page then user can see the 
+Accuracy which is obtained using KNN algorithm. 
+Along with accuracy user can also see 
+Classification Error, Sensitivity, specificity, False 
+positive rate error, precision. 
+Classification error implies how regularly is the 
+classifier right? Sensitivity implies when the actual 
+value is positive, how frequently is the prediction 
+right? Specificity implies when the actual value is 
+negative, how regularly the prediction is the right? 
+False positive rate implies when the actual value is 
+negative, how regularly the prediction is the 
+wrong? Precision implies when a positive value is 
+anticipated, how regularly is the prediction right? 
+Fig. 11. KNN Algorithm Result 
+By clicking on logout page user returns to the home 
+page. 
+VI. 
+CONCLUSION 
+The Stress Detection System is designed to assess 
+employee stress by reviewing photographs 
+submitted 
+by 
+verified 
+users, 
+making the 
+framework is reliable. After the successful 
+registration and login, user uploads the image and 
+also uses the live cam. After uploading the image, 
+we will get the output of the stress level on the top 
+of bounded box as angry, sad, happy, disgusting, 
+and neutral. 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 492
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
+Proceedings of the International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2022)
+ IEEE Xplore Part Number: CFP22BC3-ART; ISBN: 978-1-6654-9710-7
+ We develop this model by using Machine Learning 
+Algorithm like KNN classifier. We use KNN 
+classifier and predict the accuracy of the model. 
+Along with the accuracy we also predict 
+classification error, sensitivity, specificity, false 
+positive rate error, and precision. We can supply 
+successful solutions for stress management, 
+keeping the working conditions sound and 
+unconstrained for representatives, and capitalizing 
+on them all through work hours, thusly. 
+VII. 
+FUTURE SCOPE 
+To identify stress, the proposed method combines 
+image processing and deep learning. To extract 
+features, images were gathered and analyzed. 
+Along with the Live Cam, the video facility can 
+also be benefitting to the future work with various 
+algorithms. The algorithm processing outputs were 
+used to train the model and test it with the test 
+dataset. Despite the fact that the acquired results 
+are preliminary due to the small number of persons 
+involved or technical information, the key added 
+value of this paper is acquired by permitting end - 
+user to correctly recognize ongoing stress in order 
+to decrease future health risk factor. A broader 
+population study will be part of our future effort. 
+REFERENCES 
+[1] Widanti, N., Sumanto, B., Rosa, P., Miftahudin, M.F.. Stress 
+level detection using heart rate, blood pressure, and gsr and 
+stress 
+therapy by utilizing infrared. In: Industrial 
+Instrumentation and Control (ICIC), 2017 International 
+Conference on. IEEE; 2017. 
+[2] Ravinder Ahujaa, Alisha Bangab “ Mental Stress Detection 
+in University Students using Machine Learning Algorithms”, 
+International Conference on Pervasive Computing Advances 
+and Applications,2019. 
+[3] Sharma, L.D. , Bohat, V.K. , Habib, M. “Stress Detection 
+Using EEG Signals”, Journal of Advanced Research in 
+Dynamical and Control Systems,2017. 
+[4] G. Giannakakis, D. Manousos, F. Chiarugi, “Stress and 
+anxiety detection using facial expressions from videos,” 
+Biomedical Signal processing and Control”, vol. 31, pp. 89- 
+101, January 2017. 
+[5] Nisha Raichur, Nidhi Lonakadi, Priyanka Mural, “Detection 
+of Stress Using Image Processing and Machine Learning 
+Techniques”, vol.9, no. 3S, July 2017.  
+[6] U. S. Reddy, A. V. Thota and A. Dharun, "Machine 
+Learning Techniques for Stress Prediction in Working 
+Employees," 2018 IEEE International Conference on 
+Computational Intelligence and Computing Research (ICCIC), 
+Madurai, India, 2018. 
+[7] Reshmi Gopalakrishna Pillai, Mike Thelwall, Constantin 
+Orasan, “Detection of Stress and Relaxation Magnitudes for 
+Tweets”, International World Wide Web Conference Committee 
+ACM, 2018.  
+[8] Huijie Lin, Jia Jia, JiezhonQiu, “ Detecting stress based on 
+social interactions in social networks”, IEEE Transactions on 
+Knowledge and Data Engineering, 2017. 
+[9] Enrique Garcia-Ceja, Venet Osmani and Oscar Mayora, 
+“Automatic Stress Detection in working environments from 
+smartphones’ accelerometer data: A First Step” , 
+arXiv:1510.04221v1 [cs.HC] 14 Oct 2015.  
+[10] Saskia Koldijk , Mark A. Neerincx, and Wessel Kraaij, 
+“Detecting Work Stress in offices by combining unobtrusive 
+sensors”, IEEE Transactions on affective computing 2018.  
+[11]Virginia Sandulescu, Sally Andrews, David Ellis, “Stress 
+Detection using wearable physiological sensors”, Springer 
+International Publishing Switzerland 2015. 
+[12] Ankita  Patil,  Rucha  Mangalekar,  Nikita  Kupawdekar,  
+Viraj  Chavan,  Sanket    Patil,    and    Ajinkya Yadav,    “Stress    
+Detection    in    IT    Professionals   By   Image   Processing   
+And   Machine   Learning,”   International   Journal   of   
+Research   in   Engineering,   Science   and   Management, Vol. 
+3, No.1, January-2020.  
+[13] B.  Padmaja,  V.  V.  Rama  Prasad  and  K.  V.  N.  
+Sunitha,  “A  Machine  Learning  Approach  for  Stress  
+Detection  using  a  wireless  Physical  Activity  Tracker,”  
+International  Journal  of  Machine  Learning  and  Computing, 
+February, Vol. 8, No. 1, February 2018.  
+[14] Zenonos, A., Khan, A., Kalogridis, G., Vatsikas, S., Lewis, 
+T., Sooriyabandara, “Healthy Office: Mood recognition at work 
+using smartphones and wearable sensors ” , IEEE International 
+Conference on Pervasive Computing and Communication 
+Workshops 2016. 
+[15] Tanev, G., Saadi, D.B., Hoppe, K., Sorensen, H.B 
+“Classification of acute stress using linear and non-linear heart 
+rate variability analysis derived from sternal ECG” 2014 36th 
+Annual International Conference of the IEEE Engineering in 
+Medicine and Biology Society.    
+[16] Deng, Y., Wu, Z., Chu, C.H., Zhang, Q., Hsu, D.F.. Sensor 
+feature selection and combination for stress identification using 
+combinatorial fusion. International Journal of Advanced Robotic 
+Systems 2013. 
+[17] Ghaderi, A., Frounchi, J., Farnam, A.. Machine learning
+based signal processing using physiological signals for stress 
+detection. In: 2015 22nd Iranian Conference on Biomedical 
+Engineering (ICBME). 2015.  
+[18] Mrs. Megha V Gupta Dr. Shubhangi Vaikole “ Recognition 
+of Human Mental Stress Using Machine Learning 
+Paradigms”,2020. 
+[19] Liu, D., Ulrich, M.. Listen to your heart: Stress prediction 
+using consumer heart rate sensors 2015.  
+[20] Nakashima, Y., Kim, J., Flutura, S., Seiderer, A., Andre, E.. 
+Stress recognition in daily work. In: ´ International Symposium 
+on Pervasive Computing Paradigms for Mental Health. 
+Springer; 2015.  
+[21] Xu, Q., Nwe, T.L., Guan, C.. Cluster-based analysis for 
+personalized stress evaluation using physiological signals. IEEE 
+journal of biomedical and health informatics 2015. 
+[22] Gjoreski, M., Gjoreski, H., Lustrek, M., Gams, M.. 
+Continuous stress detection using a wrist device: in laboratory 
+and real life. In: Proceedings of the 2016 ACM International 
+Joint Conference on www.jespublication.com Pervasive and 
+Ubiquitous Computing: Adjunct. ACM; 2016. 
+[23] Palanisamy, K., Murugappan, M., Yaacob, S.. Multiple 
+physiological signal-based human stress identification using 
+non-linear classifiers.Elektronika ir elektrotechnika 2015. 
+[24] Villarejo, M.V., Zapirain, B.G., Zorrilla, A.M.. A stress 
+sensor based on galvanic skin response (gsr) controlled by 
+zigbee. Sensors,2012. 
+[25] Selvaraj, N.. Psychological acute stress measurement using 
+a wireless adhesive biosensor. In: 2015 37th Annual 
+International Conference of the IEEE Engineering in Medicine 
+and Biology Society (EMBC), 2015. 
+[26] Sriramprakash.S ∗, Prasanna Vadana. D, O. V. Ramana 
+Murthy “Stress Detection in Working People” 7th International 
+Conference On Advances In Computing & Communications, 
+ICACC 2017, August 22-24, 2017.                                                            
+[27]Koldijk, S., Neerincx, M.A., Kraaij, W.. Detecting work 
+stress in offices by combining unobtrusive sensors. IEEE 
+Transactions on Affective Computing 2016. 
+978-1-6654-9710-7/22/$31.00 ©2022 IEEE
+ 493
+ Authorized licensed use limited to: Florida Institute of Technology. Downloaded on July 13,2022 at 11:20:39 UTC from IEEE Xplore.  Restrictions apply. 
